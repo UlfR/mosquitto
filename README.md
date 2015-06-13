@@ -37,7 +37,7 @@ See the [project website](http://mosquitto.org/) for more information.
 
 ## Requirements
 
-This gem links against version 1.3.1 of `libmosquitto` . You will need to install additional packages for your system.
+This gem links against version 1.4.2 of `libmosquitto` . You will need to install additional packages for your system.
 
 ### OS X
 
@@ -54,14 +54,14 @@ sudo apt-get update
 sudo apt-get install pkg-config cmake openssl libc-ares-dev
 ```
 
-The current Ubuntu packages aren't on 1.3.1 yet - it's recommended to build libmosquitto from source (see below) until further notice. OpenSSL is an optional dependency - libmosquitto builds without it, however TLS specific features would not be available.
+The current Ubuntu packages aren't on 1.4.2 yet - it's recommended to build libmosquitto from source (see below) until further notice. OpenSSL is an optional dependency - libmosquitto builds without it, however TLS specific features would not be available.
 
 ### Building libmosquitto from source
 
 ``` sh
-wget http://mosquitto.org/files/source/mosquitto-1.3.1.tar.gz
-tar xzf mosquitto-1.3.1.tar.gz
-cd mosquitto-1.3.1
+wget http://mosquitto.org/files/source/mosquitto-1.4.2.tar.gz
+tar xzf mosquitto-1.4.2.tar.gz
+cd mosquitto-1.4.2
 cmake .
 sudo make install
 ```
@@ -72,8 +72,8 @@ This gem is regularly tested against the following Ruby versions on Linux and Ma
 
  * Ruby MRI 1.9.3
  * Ruby MRI 2.0.0 (ongoing patch releases).
- * Ruby MRI 2.1.0 (ongoing patch releases).
- * Ruby MRI 2.1.1 (ongoing patch releases).
+ * Ruby MRI 2.1.x (ongoing patch releases).
+ * Ruby MRI 2.2.X (ongoing patch releases).
 
 Ruby 1.8, Rubinius and JRuby are not supported.
 
@@ -87,7 +87,7 @@ When are requirements or dependencies are met, the following should install mosq
 gem install mosquitto
 ```
 
-The extension checks for libmosquitto presence as well as a 1.3.1 version.
+The extension checks for libmosquitto presence as well as a 1.4.2 version.
 
 ## Usage
 
