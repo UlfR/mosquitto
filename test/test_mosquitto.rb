@@ -4,7 +4,7 @@ require File.join(File.dirname(__FILE__), 'helper')
 
 class TestMosquitto < MosquittoTestCase
   def test_version
-    assert_equal 1003001, Mosquitto.version
+    assert_equal 1004002, Mosquitto.version
   end
 
   def test_constants

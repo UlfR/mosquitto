@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'test/unit'
+require 'minitest/autorun'
 require 'mosquitto'
 require 'stringio'
 require 'thread'
@@ -10,7 +10,7 @@ require 'timeout'
 Thread.abort_on_exception = true
 STDOUT.sync
 
-class MosquittoTestCase < Test::Unit::TestCase
+class MosquittoTestCase < Minitest::Test
   TEST_HOST = "localhost"
   TEST_PORT = 1883
 
