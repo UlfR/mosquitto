@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_development_dependency('rake-compiler', '~> 0.9.2')
   s.add_development_dependency('yard')
+  s.add_development_dependency('minitest')
 end
