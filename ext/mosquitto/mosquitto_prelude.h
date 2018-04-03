@@ -5,9 +5,9 @@
 #define RFLOAT_VALUE(v) (RFLOAT(v)->value)
 #endif
 
-#if LIBMOSQUITTO_VERSION_NUMBER != 1004002
-#error libmosquitto version 1.4.2 required
-#endif
+//if LIBMOSQUITTO_VERSION_NUMBER != 1004002
+//error libmosquitto version 1.4.2 required
+//endif
 
 #ifdef RUBINIUS
 #include "rubinius.h"
